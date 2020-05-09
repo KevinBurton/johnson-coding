@@ -27,9 +27,7 @@ Implement this function: filterValuesByKeys() takes in an object of key/value pa
 Implement and explain this function: buildBoundsDetector() takes numeric upper and lower bounds and returns a function that accepts a single numeric argument and returns true if the argument is inside the bounds and false if it is outside.  In other words, it could be used like this:
 >      var isPercentage = buildBoundsDetector(0, 100);
 >      if (isPercentage(4)) { ...
->
 Use <= and >= for the comparisions. Explain why this works.
-
 > function buildBoundDetector(lowerBound, upperBound) {  // returns function
 >
 > // implement me!
