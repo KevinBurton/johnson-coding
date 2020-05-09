@@ -38,7 +38,18 @@ export function fizzbuzz(): string[] {
     });
 }
 export function customSort(input: number[]): number[] {
-    input.sort((a,b) => a - b);
+    let index = 0;
+    if(input.length < 2) { return input; }
+    while(index < input.length - 1) {
+        if(input[index + 1] < input[index]) {
+            let temp: number = input[index + 1];
+            input[index + 1] = input[index];
+            input[index] = temp;
+            index = 0;
+        } else {
+            index++;
+        }
+    }
     return input;
 }
 export function dice(input: string): number {
