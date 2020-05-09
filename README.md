@@ -69,7 +69,7 @@ custom_sort([1, 5, 2, 8, 9, 5, 3, 7]) and return [1, 2, 3, 5, 5, 7, 8, 9]
 ### QUESTION 6
 
 Write a javascript function that simulates rolling one or more dice. It will accept
-a string argument in the format {digit}d{digit} where the first digit represents 
+a string argument in the format {digit}d{digit} where the first digit represents
 the number of dice and the second digit represents the number of sides. The returned
 value would be the sum or the dice. So if the string argument was 1d6 I would expect
 a resulting random number 1-6.
