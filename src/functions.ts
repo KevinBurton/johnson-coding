@@ -8,10 +8,12 @@ export function buildBoundDetector(lowerBound: number, upperBound: number): (n: 
 export function defaultMatrix(size: number): number[][] { // returns array
     // fix me!
 	let defaultValue: number = 0;
-	let row: number[] = [];
 	let matrix: number[][] = [];
-	for (var i=0; i < size; i++) { row.push(defaultValue); }
-	for (var i=0; i < size; i++) { matrix.push(row); }
+	for (var i=0; i < size; i++) { 
+        let row: number[] = [];
+        for (var j=0; j < size; j++) { row.push(defaultValue); }
+        matrix.push(row); 
+    }
 	return matrix;
 }
 export function fizzbuzz(): string[] {
