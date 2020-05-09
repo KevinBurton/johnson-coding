@@ -7,9 +7,9 @@ export function buildBoundDetector(lowerBound: number, upperBound: number): (n: 
 // Returns a function that uses closure to form the upper and lower bound for the test in the function returned
 export function defaultMatrix(size: number): number[][] { // returns array
     // fix me!
-	var defaultValue = 0;
-	var row = [];
-	var matrix = [];
+	let defaultValue: number = 0;
+	let row: number[] = [];
+	let matrix: number[][] = [];
 	for (var i=0; i < size; i++) { row.push(defaultValue); }
 	for (var i=0; i < size; i++) { matrix.push(row); }
 	return matrix;
