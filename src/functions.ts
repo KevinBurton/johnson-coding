@@ -21,7 +21,7 @@ export function fizzbuzz(): string[] {
     let fiveCounter: number = 0;
     // Create an array with 100 elements then with 'map' fill the elements with
     // the appropriate string (multiples of three or five)
-    return Array.apply(0, Array(100)).map((v, i) => { 
+    return Array.apply(null, Array(100)).map((v, i) => { 
         threeCounter++;
         fiveCounter++;
         if(threeCounter == 3) {
